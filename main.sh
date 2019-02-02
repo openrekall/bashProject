@@ -16,7 +16,7 @@ if [[ -d "$_FOLDER" ]] && [[ -f "$_FOLDER/$_FUNC" ]] && [[ -f "$_FOLDER/$_VAR" ]
         # includes
         source $_FOLDER/$_VAR && source $_FOLDER/$_FUNC
         
-        [ $? -eq 0 ] && create_message 'ok' 'variables and functions are loading' || echo "\e[1;31m error: inclusions of variables and functions impossible.\e[0;m"
+        [ $? -eq 0 ] && createMessage 'ok' 'variables and functions are loading' || echo "\e[1;31m error: inclusions of variables and functions impossible.\e[0;m"
 
     else
         echo -e "\e[1;31m Error: folder [utils] not found.\e[0;m"
